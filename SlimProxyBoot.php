@@ -62,9 +62,9 @@ $proxyClass = new \Slim\SlimHmacProxy();
  * @author Okan CIRAN
  * 
  */ 
-  $proxyClass->setRestApiBaseUrl("http://slim.sanalfabrika.com:9990/");
+  $proxyClass->setRestApiBaseUrl("http://slim.uretimosb.com:9990/");
   //$proxyClass->setRestApiBaseUrl("http://sanalfabrika.slim.com:9990/");
-//$proxyClass->setRestApiBaseUrl("https://slim.sanalfabrika.com/");
+//$proxyClass->setRestApiBaseUrl("https://slim.uretimosb.com/");
 $proxyClass->setRestApiEndPoint("index.php/");
 //$proxyClass->setEndPointUrl('http://88.249.18.205:8090/slim2_ecoman/index.php/');
 //$ecoman->setEndPointUrl('http://88.249.18.205:8090/slim2_ecoman/index.php/');
