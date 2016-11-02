@@ -1211,8 +1211,24 @@ class SlimHmacProxy extends \Proxy\Proxy {
                                     'pkFillGrid_infoUsersSendingMail' => 'restApiDefaultCall',
      
          //**---- InfoUsersSendingMail ------------------- 
-        
-        
+         //** ActProcessConfirm ----------------------
+                                    'pkDelete_actProcessConfirm' => 'restApiDefaultCall',
+                                    'pkGetAll_actProcessConfirm' => 'restApiDefaultCall',
+                                    'pkInsert_actProcessConfirm' => 'restApiDefaultCall',
+                                    'pkUpdate_actProcessConfirm' => 'restApiDefaultCall',
+                                    'pkFillGrid_actProcessConfirm' => 'restApiDefaultCall',
+                                    'pkGetConsultantJobs_actProcessConfirm' => 'restApiDefaultCall',
+     
+         //**---- ActProcessConfirm ------------------- 
+          //** SysMachineToolModelMaterials ----------------------
+                                    'pkDelete_sysMachineToolModelMaterials' => 'restApiDefaultCall',
+                                    'pkGetAll_sysMachineToolModelMaterials' => 'restApiDefaultCall',
+                                    'pkInsert_sysMachineToolModelMaterials' => 'restApiDefaultCall',
+                                    'pkUpdate_sysMachineToolModelMaterials' => 'restApiDefaultCall',
+                                    'pkFillGrid_sysMachineToolModelMaterials' => 'restApiDefaultCall',
+                                    'pkFillMachineToolModelListGrid_sysMachineToolModelMaterials' => 'restApiDefaultCall',
+                                    'pkUpdateMakeActiveOrPassive_sysMachineToolModelMaterials' => 'restApiDefaultCall',
+         //**---- SysMachineToolModelMaterials ------------------- 
         
         
         
@@ -1998,6 +2014,14 @@ class SlimHmacProxy extends \Proxy\Proxy {
             $this->setRestApiFullPathUrl($this->restApiBaseUrl . $this->restApiEndPoint . $this->restApiEndPointFunction);
         }   else if (substr($endPointFunction, -21) == '_infoUsersSendingMail') {          
             $this->setRestApiEndPoint('infouserssendingmail.php/');
+            //    print_r($this->restApiBaseUrl.$this->restApiEndPoint.$this->restApiEndPointFunction);
+            $this->setRestApiFullPathUrl($this->restApiBaseUrl . $this->restApiEndPoint . $this->restApiEndPointFunction);
+        }   else if (substr($endPointFunction, -18) == '_actProcessConfirm') {          
+            $this->setRestApiEndPoint('actprocessconfirm.php/');
+            //    print_r($this->restApiBaseUrl.$this->restApiEndPoint.$this->restApiEndPointFunction);
+            $this->setRestApiFullPathUrl($this->restApiBaseUrl . $this->restApiEndPoint . $this->restApiEndPointFunction);
+        }   else if (substr($endPointFunction, -29) == '_sysMachineToolModelMaterials') {          
+            $this->setRestApiEndPoint('sysmachinetoolmodelmaterials.php/');
             //    print_r($this->restApiBaseUrl.$this->restApiEndPoint.$this->restApiEndPointFunction);
             $this->setRestApiFullPathUrl($this->restApiBaseUrl . $this->restApiEndPoint . $this->restApiEndPointFunction);
         }   
